@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "scripty",
     "test": "scripty",
@@ -22,5 +19,8 @@
   },
   "scripty": {
     "path": "../../scripts/subprojects"
+  },
+  "publishConfig": {
+    "@monorepo:registry": "http://192.168.56.102/api/v4/projects/30/packages/npm/"
   }
 }
