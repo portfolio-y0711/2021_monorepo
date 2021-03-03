@@ -9,6 +9,7 @@
     "subprojects/*"
   ],
   "devDependencies": {
+    "lerna": "^4.0.0",
     "rimraf": "^3.0.2"
   }
 }
