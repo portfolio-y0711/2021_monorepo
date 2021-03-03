@@ -3,6 +3,9 @@
     "references": [
         {
             "path": "types"
+        },
+        {
+            "path": "api"
         }
     ]
 }
