@@ -4,7 +4,7 @@
 
 ```ts
 
-// @public (undocumented)
+// @public
 export interface IUser {
     // (undocumented)
     id: number;
@@ -14,7 +14,5 @@ export interface IUser {
     userId: string;
 }
 
-
-// (No @packageDocumentation comment for this package)
 
 ```

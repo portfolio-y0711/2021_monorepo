@@ -1,15 +1,10 @@
 /**
  * @packageDocumentation
  *
- * <h3>Why does this library exist?</h3>
- *
- * `@monorepo/types` is a package for types 
- *  <a href="https://github.com/portfolio-y0711/2021_monorepo/" target="_blank">
- *  the repo on GitHub
- * </a>
+ *  🐙 모노리포 프로젝트에서 사용될 타입 정보를 포함하는 패키지입니다.  
  *
  * @remarks
- * All interfaces are prefixed with `I`
+ * 모든 인터페이스는 접두어 `I`로 시작합니다. 
  *
  * @packageDocumentation
  */
