@@ -9,6 +9,8 @@
     "subprojects/*"
   ],
   "devDependencies": {
+    "@commitlint/config-conventional": "^12.0.1",
+    "@commitlint/config-lerna-scopes": "^12.0.1",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "eslint": "^7.21.0",
@@ -29,7 +31,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn clean && yarn lint && yarn build && yarn test",
-      "commit-msg": "echo ok"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
