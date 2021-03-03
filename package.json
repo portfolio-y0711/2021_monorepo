@@ -1,0 +1,10 @@
+{
+  "name": "2021_monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "portfolio-y0711 <portfolio-y0711@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "subprojects/*"
+  ]
+}
