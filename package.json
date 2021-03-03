@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "portfolio-y0711 <portfolio-y0711@gmail.com>",
   "license": "MIT",
+  "private": true,
   "workspaces": [
     "subprojects/*"
   ]
