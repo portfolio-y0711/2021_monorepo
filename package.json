@@ -12,6 +12,7 @@
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "eslint": "^7.21.0",
+    "husky": "^4.3",
     "lerna": "^4.0.0",
     "rimraf": "^3.0.2",
     "scripty": "^2.0.0"
@@ -24,5 +25,11 @@
   },
   "scripty": {
     "path": "./scripts/workspace"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn clean && yarn lint && yarn build && yarn test",
+      "commit-msg": "echo ok"
+    }
   }
 }
