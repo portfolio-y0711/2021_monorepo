@@ -1,9 +1,10 @@
 {
   "extends": "../tsconfig.settings.json",
   "compilerOptions": {
+    "experimentalDecorators": true,
     "composite": true,
     "outDir": "dist",
     "rootDir": "src"
   },
-  "include": ["src"]
+  "include": ["src"],
 }

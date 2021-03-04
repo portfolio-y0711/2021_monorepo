@@ -10,23 +10,12 @@
  */
 
 import * as express from 'express'
-import { IUser } from '@monorepo/types'
+import { applyAdaptors } from './adapters'
+import router from './router'
 
 const app = express()
+applyAdaptors(app)
 
-app.get('/healthcheck', (_: express.Request, res: express.Response) => {
-    res.send({ "status" : "UP" })
-})
+app.use('/', router)
 
-app.get('/user', (_: express.Request, res: express.Response) => {
-    const user : IUser = {
-        id: 1,
-        userId: 'sampleId',
-        name: 'sampleName'
-    }
-    res.json(user)
-})
-
-app.listen(5000, () => {
-    console.log('app is running at 5000')
-})
+export default app

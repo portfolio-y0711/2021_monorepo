@@ -1,0 +1,46 @@
+{
+	"basePath": "/v1",
+	"consumes": [
+		"application/json"
+	],
+	"definitions": {},
+	"info": {
+		"title": "@monorepo/api",
+		"version": "0.0.1"
+	},
+	"paths": {
+		"/actuator/health": {
+			"get": {
+				"operationId": "Healthcheck",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+							"additionalProperties": true,
+							"type": "object"
+						},
+						"examples": {
+							"application/json": {
+								"status": "UP"
+							}
+						}
+					}
+				},
+				"tags": [
+					"Actuator Controller"
+				],
+				"security": [],
+				"parameters": []
+			}
+		}
+	},
+	"produces": [
+		"application/json"
+	],
+	"swagger": "2.0",
+	"securityDefinitions": {},
+	"host": "localhost:5000"
+}

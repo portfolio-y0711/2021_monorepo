@@ -4,18 +4,22 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "clean": "rimraf dist *.tsbuildinfo",
     "build": "scripty",
     "test": "scripty",
     "lint": "scripty",
-    "clean": "rimraf dist *.tsbuildinfo",
-    "gen-docs": "scripty"
+    "gen-docs": "scripty",
+    "tsoa": "tsoa routes && tsoa swagger",
+    "dev": "nodemon --watch src/controllers -e ts -x 'rimraf ./src/router/routes.ts ./swagger.json && yarn tsoa && ts-node ./src/_bin/www.ts'"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.13.9",
     "@babel/preset-typescript": "^7.13.0",
     "@types/express": "^4.17.11",
     "@types/jest": "^26.0.20",
+    "@types/method-override": "^0.0.31",
     "jest": "^26.6.3",
+    "tsoa": "^2.4.11",
     "typescript": "^4.2.2"
   },
   "scripty": {
@@ -26,6 +30,7 @@
   },
   "dependencies": {
     "@monorepo/types": "^0.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "swagger-ui": "^2.2"
   }
 }
