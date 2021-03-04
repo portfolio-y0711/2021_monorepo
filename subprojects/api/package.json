@@ -8,7 +8,6 @@
     "build": "scripty",
     "test": "scripty",
     "lint": "scripty",
-    "gen-docs": "scripty",
     "tsoa": "tsoa routes && tsoa swagger",
     "dev": "nodemon --watch src/controllers -e ts -x 'rimraf ./src/router/routes.ts ./swagger.json && yarn tsoa && ts-node ./src/_bin/www.ts'"
   },
@@ -29,7 +28,7 @@
     "@monorepo:registry": "http://192.168.56.102/api/v4/projects/30/packages/npm/"
   },
   "dependencies": {
-    "@monorepo/types": "^0.0.1",
+    "@monorepo/typings": "^0.0.1",
     "express": "^4.17.1",
     "swagger-ui": "^2.2"
   }

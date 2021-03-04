@@ -1,6 +1,6 @@
 import * as express from 'express'
 import { Router } from 'express'
-import { IUser } from '@monorepo/types';
+import { IUser } from '@monorepo/typings';
 
 const router = Router()
 

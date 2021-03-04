@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-yarn clean
-yarn tsc -b subprojects
-yarn lerna run gen-docs
+lerna run clean --ignore @monorepo/api
+lerna run build --ignore @monorepo/api
+yarn lerna run gen-docs --ignore @monorepo/api
 
 GH_PAGES_CFG_EXISTS=$(test -f docs/_config.yml)
 if [ $GH_PAGES_CFG_EXISTS ]

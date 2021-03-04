@@ -2,7 +2,7 @@
     "files": [],
     "references": [
         {
-            "path": "types"
+            "path": "typings"
         },
         {
             "path": "api"

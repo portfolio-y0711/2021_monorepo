@@ -1,1 +1,2 @@
-ts-node subprojects/api/src/index.ts
+#!/usr/bin/env bash
+echo 'not yet implemented!!!'

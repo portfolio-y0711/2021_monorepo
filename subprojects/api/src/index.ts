@@ -14,6 +14,7 @@ import { applyAdaptors } from './adapters'
 import router from './router'
 
 const app = express()
+
 applyAdaptors(app)
 
 app.use('/', router)
