@@ -1,0 +1,1 @@
+concurrently "lerna exec 'yarn dev' --scope @monorepo/api" "lerna exec 'yarn start' --scope @monorepo/app"
