@@ -6,6 +6,12 @@
         },
         {
             "path": "api"
+        },
+        {
+            "path": "typings"
+        },
+        {
+            "path": "components"
         }
     ]
 }

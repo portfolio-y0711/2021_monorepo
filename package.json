@@ -15,7 +15,8 @@
     "@microsoft/api-extractor": "^7.13.1",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
-    "eslint": "^7.21.0",
+    "concurrently": "^6.0.0",
+    "eslint": "^6.1.0",
     "husky": "^4.3",
     "lerna": "^4.0.0",
     "rimraf": "^3.0.2",
@@ -28,6 +29,7 @@
     "test": "scripty",
     "start": "scripty",
     "dev": "scripty",
+    "dev-server": "scripty",
     "docs": "scripty"
   },
   "scripty": {
@@ -38,5 +40,19 @@
       "pre-commit": "yarn clean && yarn lint && yarn build && yarn test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "setupFilesAfterEnv": [
+      "./setupTests.ts"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "packages/*/src/**/*.{js,jsx,ts,tsx}"
+    ]
   }
 }
